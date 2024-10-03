@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height:100vh;
 }
 
 form {
@@ -19,3 +20,60 @@ button {
   display: block;
   margin-top: 10px;
 }
+
+.App {
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  background-color: #ff00ff; /* Bright magenta background */
+  color: #00ff00; /* Bright green text */
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+form {
+  height:90vh;
+  background-color: #ff0000; /* Red background for the form */
+  padding: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  background-color: #00ffff; /* Cyan background */
+  color: #ff00ff; /* Magenta text */
+  border: 2px solid #0000ff; /* Blue border */
+}
+
+.spinning-input {
+  animation: spin 2s linear infinite;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffff00; /* Bright yellow background */
+  color: #000000; /* Black text */
+  border: 2px solid #ff0000; /* Red border */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
